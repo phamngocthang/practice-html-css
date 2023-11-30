@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <div class="image">
+                <img src="eduford_img/logo.png" alt="">
+            </div>
+            <div class="nav-link" id="navLinks">
+                <i class="fa-solid fa-xmark" id="hideMenu" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="showMenu" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>
+                I'm extremely grateful for this video, man. I'm not the sharpest tool in the shed <br/> when it comes to coding, 
+                but this the most comprehensive tutorial.
+            </p>
+            <a href="#">Visit Us To Know More</a>
+        </div>
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum door sit amet, consectetur adipiscing elit</p>
+        <div class="row">
+            <div class="course-box">
+                <h2>Intermediate</h2>
+                <p>Man, I must tell you that you are just great when it comes to Web Development. <br> Haven't seen anyone who makes Web Development easy to understand like you do.</p>
+            </div>
+            <div class="course-box">
+                <h2>Degree</h2>
+                <p>Man, I must tell you that you are just great when it comes to Web Development. <br> Haven't seen anyone who makes Web Development easy to understand like you do.</p>
+            </div>
+            <div class="course-box">
+                <h2>Post Gradution</h2>
+                <p>Man, I must tell you that you are just great when it comes to Web Development. <br> Haven't seen anyone who makes Web Development easy to understand like you do.</p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Learn How To Make A Complete Website Using HTML and CSS</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="eduford_img/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/newyork.png">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Learn How To Make A Complete Website Using HTML and CSS</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navlink = document.getElementById("navLinks");
+
+        function showMenu() {
+            navlink.style.right = "0"
+        }
+
+        function hideMenu() {
+            navlink.style.right = "-240px"
+        }
+    </script>
+</body>
+</html>
